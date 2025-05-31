@@ -9,6 +9,7 @@ build/macos/verifpal
 build/macos/verifpal_applesilicon
 build/freebsd/verifpal
 dist
+result
 
 # Binaries for programs and plugins
 *.exe
