@@ -49,19 +49,18 @@
           '';
         };
 
-        devShells.default = pkgs.mkShellNoCC rec {
+        devShells.${system} = pkgs.mkShell {
           buildInputs = with pkgs; [
             go
             gotools
             gnumake
-            self.packages.${system}.default
           ];
 
           shellHook = ''
-            echo "verifpal should now be in your path"
+            echo "Entering Verifpal dev shell"
             export SHELL=${pkgs.zsh}/bin/zsh
             exec $SHELL
-            export PATH="${self.packages.${system}.default}/bin:$PATH"
+            export PATH="$PATH:$out/bin/verifpal"
           '';
         };
       }
