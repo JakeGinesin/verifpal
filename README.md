@@ -7,6 +7,8 @@
 
 # [Verifpal](https://verifpal.com)
 
+Jake's nix-ed verifpal thing. Run `nix develop` to drop yourself into a shell with a static `verifpal` binary.
+
 ## What is Verifpal?
 <img src="https://verifpal.com/res/img/png/pose1.png" alt="" align="left" height="300" style="margin:10px" />
 
